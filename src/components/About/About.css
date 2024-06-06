@@ -1,0 +1,185 @@
+.about-section {
+    position: relative !important;
+    padding-top: 150px !important;
+    padding-bottom: 30px !important;
+    background-image: var(--section-background-color) !important;
+    color: rgb(255, 255, 255) !important;
+  }
+  
+  .tech-icons {
+    font-size: 4.5em !important;
+    margin: 15px !important;
+    padding: 10px !important;
+    opacity: 0.93 !important;
+    border: 1.7px solid rgba(0, 0, 0, 0.637) !important;
+    vertical-align: middle !important;
+    text-align: center !important;
+    border-radius: 5px !important;
+    display: table !important;
+    box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+    background-color: transparent !important;
+  }
+
+  .tech-icons:hover {
+    display: table !important;
+    box-shadow: 4px 5px 4px 3px #0ef !important;
+    overflow: hidden !important;
+    transition: all 0.4s ease 0s !important;
+  }
+  
+  @media (max-width: 767px) {
+    .tech-icons {
+      margin: 10px !important;
+    }
+  }
+  
+  .tech-icons:hover {
+    transform: scale(1.05) !important;
+    overflow: hidden !important;
+    border: 2.2px solid rgba(0, 0, 0, 0.883) !important;
+  }
+  .tech-icon-images {
+    padding: 20px !important;
+    line-height: 1.6 !important;
+  }
+  
+  .quote-card-view {
+    border: none !important;
+    color: rgb(255, 255, 255) !important;
+    background-color: transparent !important;
+  }
+  
+  .about-activity {
+    list-style: none !important;
+    text-align: left !important;
+    padding-left: 1px !important;
+  }
+
+
+/* CSS 2 */
+
+.tab-titles{
+  margin: 40px 0 20px 0;
+  display: flex;
+
+}
+
+.tab-links{
+  margin-right: 40px;
+  font-size: 1.8em;
+  cursor : pointer;
+  position: relative;
+  width: 100%;
+}
+
+.skill-name{
+  font-size: 1.3em;
+}
+.skill-contents{
+  padding-top: 15px;
+}
+
+@media (max-width: 767px) {
+  .tab-titles{
+    margin-top: 20px;
+  }
+  .tab-links{
+    margin-right: 20px;
+    font-size: 1.2em;
+  }
+
+  .skill-name{
+    font-size: 1.1em;
+  }
+}
+
+.tab-links::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+  width: 100%;
+}
+
+.tab-contents{
+  display: none;
+  list-style: none;
+}
+
+.tab-contents.active-tab{
+  display: block;
+
+}
+
+/************************/
+/* SkillProgressBar.css */
+/************************/
+.progress-bar-container {
+  width: 100%;
+  height: 15px;
+  background-color: #ddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden; 
+}
+
+@media (max-width: 767px) {
+  .progress-bar-container {
+    height: 10px;
+   
+  }
+}
+
+.progress-bar {
+  height: 100%;
+  transition: width 0.3s ease; 
+}
+
+
+.high-level .progress-bar{
+  background-color: #4caf50; 
+}
+
+.medium-level .progress-bar{
+  background-color: #ff9800;
+}
+
+.low-level .progress-bar{
+  background-color: #f44336;
+}
+
+/*********************************************************************************/
+/*                            Experience Content                                 */
+/*********************************************************************************/
+.experience-contents{
+  list-style: square;
+  font-size: 1.2em;
+}
+
+/*********************************************************************************/
+/*                             Education Contents                                */
+/*********************************************************************************/
+
+.education-contents{
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+.education-contents ul title{
+  list-style: square;
+  font-size: 1.2em;
+}
+
+@media (max-width: 767px) {
+  .education-contents{
+    font-size: 1.2em;
+  }
+}
+
